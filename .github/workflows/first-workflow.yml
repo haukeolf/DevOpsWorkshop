@@ -29,7 +29,7 @@ jobs:
 
     steps:
       - name: Use Cowsays action
-        uses: actions/cowsay@v1
+        uses: mscoutermarsh/cowsays-action@v1
         with:
           text: "Ready for prod–ship it!"
           color: magenta
