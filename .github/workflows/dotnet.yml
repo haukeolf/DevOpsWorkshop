@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v2
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
@@ -51,7 +51,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v2
     
     - name: Docker Login
       # You may pin to the exact commit or the version.
@@ -101,7 +101,7 @@ jobs:
       url: https://${{ env.prefix }}-test.azurewebsites.net/
     
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v2
     
     - name: 'Login via Azure CLI'
       uses: azure/login@v1
@@ -122,7 +122,7 @@ jobs:
       url: https://${{ env.prefix }}-prod.azurewebsites.net/
     
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v2
     
     - name: 'Login via Azure CLI'
       uses: azure/login@v1
